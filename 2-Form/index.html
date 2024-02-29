@@ -10,21 +10,28 @@
 
 <body>
     <main>
-        <div class="container">
-            <h1>Регистрация</h1>
-            <p>Уже есть аккаунт? <a href="#">Войти</a></p>
-            <form action="#" method="post">
+        <section class="registration">
+            <h1 class="registration__title">Регистрация</h1>
+            <p class="registration__entry">Уже есть аккаунт? <a href="#">Войти</a></p>
+            <form class="registration__form" action="#" method="post">
                 <input type="text" name="company" placeholder="Компания" required>
                 <input type="text" name="name" placeholder="Имя" required>
                 <input type="text" name="surname" placeholder="Фамилия" required>
                 <input type="email" name="email" placeholder="E-mail" required>
-                <button type="submit">Зарегистрироваться</button>
-                <input type="checkbox" name="politics" id="politics" required>
-                <label for="politics">
+                <button class="registration__btn" type="submit">
+                    Зарегистрироваться
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.0607 13.0607C23.6464 12.4749 23.6464 11.5251 23.0607 10.9393L13.5147 1.3934C12.9289 0.807611 11.9792 0.807611 11.3934 1.3934C10.8076 1.97919 10.8076 2.92893 11.3934 3.51472L19.8787 12L11.3934 20.4853C10.8076 21.0711 10.8076 22.0208 11.3934 22.6066C11.9792 23.1924 12.9289 23.1924 13.5147 22.6066L23.0607 13.0607ZM0 13.5H22V10.5H0V13.5Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <label class="registration__politics" for="politics">
+                    <input type="checkbox" name="politics" id="politics" required>
                     Я прочитал и принимаю <a href="#">Условия использования</a>
                 </label>
             </form>
-        </div>
+        </section>
     </main>
 </body>
 
